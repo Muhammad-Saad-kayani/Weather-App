@@ -6,7 +6,7 @@ import wind_icon from '../assets/wind.png';
 
 const Weather = () => {
   return (
-    <div className="w-80 h-[450px] mt-20 border rounded-xl mx-auto bg-purple-600 flex flex-col justify-start items-center p-4">
+    <div className="w-80 h-[450px] mt-20 border rounded-xl mx-auto bg-blue-600 flex flex-col justify-start items-center p-4">
       {/* Search Bar */}
       <div className="flex items-center space-x-3 mt-4">
         <div className="flex items-center border border-black rounded-3xl bg-white px-2 py-1 w-64">
@@ -26,7 +26,7 @@ const Weather = () => {
 
       {/* Temperature */}
       <div className="flex">
-        <p className="font-bold text-3xl text-white font-mono">16°</p>
+        <p className="font-bold text-4xl text-white font-mono">16°</p>
         <p className="font-bold text-2xl text-white mt-1">C</p>
       </div>
 
