@@ -33,6 +33,12 @@ const Weather = () => {
         search(city);
       },[]);
 
+      const handleKeyPress = (e) => {
+        if (e.key === "Enter") {
+          search(city);
+        }
+      };
+
   return (
     <div className="w-80 h-[450px] mt-20 border rounded-xl mx-auto bg-blue-600 flex flex-col justify-start items-center p-4">
       {/* Search Bar */}
@@ -43,6 +49,7 @@ const Weather = () => {
             type="text"
             placeholder="Enter City Name"
             onChange={(e) => setCity(e.target.value)}
+            onKeyDown={handleKeyPress}
           />
         </div>
         <button onClick={() => search(city)}
